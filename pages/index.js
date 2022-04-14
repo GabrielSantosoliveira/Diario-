@@ -1,12 +1,16 @@
+// header
+//fotter
 
+import Header from "../src/components/Header/Header";
 
 export default function Home() {
   return( 
           <>
+          <Header>
+
+          </Header>
   
-          <h1>  Meu Diario </h1>
-          <a href='/pag/beta'> </a>
-  
+          
   
           </>
   
