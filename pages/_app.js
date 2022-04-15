@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap"
           rel="stylesheet"
         />
+        <link rel="shortcut icon" href="/icone/betaIncon.ico" type="image/x-icon" />
       </Head>
 
 
@@ -26,6 +27,9 @@ function MyApp({ Component, pageProps }) {
             body{
                 background-color: ${cor.fundo};
             }
+
+
+   
           `}
       </style>
 
