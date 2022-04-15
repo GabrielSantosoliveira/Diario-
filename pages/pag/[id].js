@@ -1,5 +1,6 @@
 import data from "../api/data.json"
 import Header from "../../src/components/Header/Header"
+import Footer from "../../src/components/footer/Footer"
 export async function getStaticPaths() {
 
     const paths = data.paginas.map(paginasDoDiario => {
@@ -39,13 +40,14 @@ function  DiarioPaginas (props){
     
     <>
 
-        <Header></Header>
+        
 
 
         <p> {props.pagina.data}</p>
         <h1>  {props.pagina.titulo} </h1>
         <p> { props.pagina.conteudo}</p>
 
+        
 
 
 

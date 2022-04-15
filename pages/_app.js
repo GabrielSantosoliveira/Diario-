@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Header from "../src/components/Header/Header";
+import Footer from "../src/components/footer/Footer";
 import "../styles/style.css";
 import {cor} from "../styles/themes"
 function MyApp({ Component, pageProps }) {
@@ -12,7 +14,11 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
+
+
+      <Header/>
       <Component {...pageProps} />
+      <Footer/>
 
       <style global jsx>
           {`

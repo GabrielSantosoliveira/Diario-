@@ -31,6 +31,7 @@ function Header() {
                 width: 100vw;
                 background-color: ${cor.current};
                 height: 5rem;
+                box-sizing: border-box;
             }
           
             h1{
