@@ -4,12 +4,27 @@
         {   "id":"1",
             "data":"14/abr/2022",
             "titulo":"Fazendo O diario",
-            "conteudo":" hj e o dia que vou começãr esse projeto  "
+            "conteudo":" hj e o dia que vou começãr esse projeto  estou muito animado para testar meus conhecimentos com o getStaticPath  e vamos ver a onde isso vai dar " ,
+            "resumo":"o dia que comesei o projeto"
+            
         },
         {   "id":"2",
             "data":"15/abr/2022",
             "titulo":"Tela Pequena",
-            "conteudo":" Hoje eu programei na tela Pequena e quebrada , hoje eu tambem melhorei a home Desse saite e Fiz Algums Components "
+            "conteudo":" Hoje eu programei na tela Pequena e quebrada , hoje eu tambem melhorei a home Desse saite e Fiz Algums Components < isso foi muito complicado  tomara que minha tela grande volte",
+            "resumo":"o dia que programei em tela pequena"
+        },
+        {   "id":"3",
+            "data":"15/abr/2022",
+            "titulo":"Tela Pequena",
+            "conteudo":" hj dei uma pause nesse projeto e fiz um com rotas e  getServerSideProps e cookies  foi muito complicado mas eu sou muito bom e programar kkk  ",
+            "resumo":" fiz um novo projeto"
+        },
+        {   "id":"4",
+            "data":"15/abr/2022",
+            "titulo":"Tela Pequena",
+            "conteudo":" hj as 1 da manhã to com insonia em tam vou terminar o projeto  HJ meu pai zuo-me por postar um story no meu insta   ",
+            "resumo":" na madruga com meu pc "
         }
        
         

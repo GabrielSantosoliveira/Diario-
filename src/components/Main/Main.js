@@ -10,9 +10,10 @@ function Main({children}) {
       <style jsx>{`
           
       main {
-            height: calc(100vh - 161px);
+            min-height: calc(100vh - 161px);
             color: ${cor.branco};
             text-align: center;
+            
           }
 
           `}</style>

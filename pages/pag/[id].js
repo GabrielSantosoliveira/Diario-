@@ -1,59 +1,60 @@
-import data from "../api/data.json"
-import Header from "../../src/components/Header/Header"
-import Footer from "../../src/components/footer/Footer"
+import data from "../api/data.json";
+import Main from "../../src/components/Main/Main";
+import Box from "../../src/components/Box/Box";
+import Paragrafo from "../../src/components/Paragrafo/Paragrafo";
+import Titulo from "../../src/components/Titulo/Titulo";
 export async function getStaticPaths() {
+  const paths = data.paginas.map((paginasDoDiario) => {
+    return { params: { id: `${paginasDoDiario.id}` } };
+  });
 
-    const paths = data.paginas.map(paginasDoDiario => {
-        return{ params: { id:`${paginasDoDiario.id}` } }
-    })
-    
-    console.log(paths)
-    return {
-        paths,
-      
-      fallback: false // false or 'blocking'
-    };
-  }
+  console.log(paths);
 
-export async function getStaticProps (context){
+  return {
+    paths,
 
-    const pagina = data.paginas.find(paginaAtual => {
-        if(paginaAtual.id === context.params.id){
-            return true;
-        }
-        return false;
-    })
-    
-    return {
-        props: {
-            pagina
-        },
+    fallback: false, // false or 'blocking'
+  };
+}
+
+export async function getStaticProps(context) {
+  const pagina = data.paginas.find((paginaAtual) => {
+    if (paginaAtual.id === context.params.id) {
+      return true;
     }
+    return false;
+  });
+
+  return {
+    props: {
+      pagina,
+    },
+  };
 }
 
-
-function  DiarioPaginas (props){
-
-    console.log(props.pagina)
-
-    return (
-    
+function DiarioPaginas(props) {
+  return (
     <>
+      <Main>
+        <Box>
+          <p className="data"> {props.pagina.data}</p>
+          <Titulo>
+             {props.pagina.titulo} 
+          </Titulo>
+          <Paragrafo>
+             {props.pagina.conteudo}
+          </Paragrafo>
+        </Box>
+      </Main>
 
-        
-
-
-        <p> {props.pagina.data}</p>
-        <h1>  {props.pagina.titulo} </h1>
-        <p> { props.pagina.conteudo}</p>
-
-        
-
-
-
+      <style jsx>{`
+        .data {
+          font-family: serif;
+          font-size:1.4rem;
+        }
+      `}</style>
     </>
-    
-    )
+  );
 }
 
-export default DiarioPaginas
+export default DiarioPaginas;

@@ -32,6 +32,7 @@ function Header() {
                 background-color: ${cor.current};
                 height: 5rem;
                 box-sizing: border-box;
+                padding: 1rem;
             }
           
             h1{
@@ -39,12 +40,12 @@ function Header() {
                 font-weight:700;
                 color:${cor.Green};
                 
-                width:30%;
+                width:28%;
 
             }
             nav{
                 
-                width:50%;
+                width:28%;
             }
             ul{
                 display: flex;

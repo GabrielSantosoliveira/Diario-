@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }) {
           
             body{
                 background-color: ${cor.fundo};
+                width: 100vw;
             }
 
 
